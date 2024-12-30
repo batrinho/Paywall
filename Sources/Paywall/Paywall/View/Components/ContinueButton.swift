@@ -22,7 +22,7 @@ final class ContinueButton: UIButton {
     private func setupButton() {
         setTitle("Let’s go", for: .normal)
         backgroundColor = .label
-        setTitleColor(.secondaryLabel, for: .normal)
+        setTitleColor(.systemBackground, for: .normal)
         layer.cornerRadius = 25
         translatesAutoresizingMaskIntoConstraints = false
     }

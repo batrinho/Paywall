@@ -26,6 +26,7 @@ final class SuflerPaywallViewController: UIViewController, SuflerPaywallOutput {
     private let suflerPlusImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "suflerplus"))
         imageView.contentMode = .scaleAspectFit
+        imageView.tintColor = .label
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -64,7 +65,7 @@ final class SuflerPaywallViewController: UIViewController, SuflerPaywallOutput {
     
     private let featuresView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         view.layer.cornerRadius = 20
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
