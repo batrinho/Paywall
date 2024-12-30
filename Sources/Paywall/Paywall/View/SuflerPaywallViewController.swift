@@ -66,7 +66,7 @@ final class SuflerPaywallViewController: UIViewController, SuflerPaywallOutput {
     
     private let featuresView: UIView = {
         let view = UIView()
-        view.backgroundColor = .secondarySystemBackground
+        view.backgroundColor = .tertiarySystemBackground
         view.layer.cornerRadius = 20
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
