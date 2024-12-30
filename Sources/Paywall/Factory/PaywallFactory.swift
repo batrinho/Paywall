@@ -7,14 +7,14 @@
 
 import UIKit
 
-final class PaywallFactory {
+public final class PaywallFactory {
     public init() {}
     
     @available(iOS 13.0, *)
     public func createPaywall(dependency: PaywallDependency) -> UIViewController {
         let presenter = SuflerPaywallPresenter(dependency: dependency)
         let view = SuflerPaywallViewController(presenter: presenter)
-        presenter.output = view
+        presenter.view = view
         return view
     }
 }

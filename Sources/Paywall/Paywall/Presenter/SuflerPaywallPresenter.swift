@@ -8,7 +8,7 @@
 import Foundation
 
 final class SuflerPaywallPresenter: SuflerPaywallInput {
-    weak var output: SuflerPaywallOutput?
+    weak var view: SuflerPaywallOutput?
     
     private let dependency: PaywallDependency
     
@@ -17,9 +17,9 @@ final class SuflerPaywallPresenter: SuflerPaywallInput {
     }
     
     func viewDidLoad() {
-        output?.setPrice(dependency.provider.getPrice())
-        output?.setFeatures(dependency.provider.getFeaturesList())
-        output?.updateUI()
+        view?.setPrice(dependency.provider.getPrice())
+        view?.setFeatures(dependency.provider.getFeaturesList())
+        view?.updateUI()
     }
     
     func dismiss() {
